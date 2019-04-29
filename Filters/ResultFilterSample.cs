@@ -9,13 +9,13 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace aspnetcore_filter.Filters
 {
-    public class ResultFilterSample : ResultFilterAttribute
+    public class ResultFilterSampleAttribute : ResultFilterAttribute
     {
 
         private readonly string _name;
         private readonly string _value;
 
-        public ResultFilterSample(string name = "", string value = "")
+        public ResultFilterSampleAttribute(string name = "", string value = "")
         {
             _name = name;
             _value = value;

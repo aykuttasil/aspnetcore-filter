@@ -17,6 +17,7 @@ namespace aspnetcore_filter.Controllers
             return View();
         }
 
+        [ActionFilterSample]
         [ResultFilterSample("Author-X", "Aykut Asil - X")]
         public IActionResult Privacy()
         {
