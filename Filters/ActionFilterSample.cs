@@ -23,7 +23,7 @@ namespace aspnetcore_filter.Filters
 
         override public void OnActionExecuting(ActionExecutingContext context)
         {
-            context.HttpContext.Response.Headers.Add("test-header", "qwerty");
+            context.HttpContext.Response.Headers.Add("Test-ActionFilterAttribute", "yeah");
         }
 
         override public void OnActionExecuted(ActionExecutedContext context)
